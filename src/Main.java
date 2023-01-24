@@ -2,7 +2,6 @@ import enums.Type;
 import exceptions.TaskNotFoundExceptions;
 import services.TaskService;
 import task.DailyTask;
-import task.MonthlyTask;
 import task.OneTimeTask;
 import task.WeeklyTask;
 
@@ -34,11 +33,6 @@ public class Main {
         taskService.add(oneTimeTask);
         taskService.add(weeklyTask);
 
-        try {
-            System.out.println(taskService.remove(3));
-        } catch (TaskNotFoundExceptions e) {
-            System.out.println("Ощибочка вышла");
-        }
         System.out.println(taskService.getAllByDate(LocalDate.of(2023, 2, 2)));
     }
 }

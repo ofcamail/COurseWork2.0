@@ -42,7 +42,6 @@ public abstract class Task {
     public String getDescription() {
         return description;
     }
-
     public void setTitle(String title) {
         if (title != null && !title.isEmpty() && !title.isBlank()) {
             this.title = title;

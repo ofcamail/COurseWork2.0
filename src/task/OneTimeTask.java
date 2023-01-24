@@ -9,7 +9,6 @@ public class OneTimeTask extends Task{
     public OneTimeTask(String title, Type type, String description, LocalDateTime dateTime) {
         super(title, type, description, dateTime);
     }
-
     @Override
     public boolean appearsIn(LocalDate localDate) {
         return localDate.isAfter(LocalDate.now().minusDays(1))

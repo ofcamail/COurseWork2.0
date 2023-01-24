@@ -12,7 +12,6 @@ import java.util.stream.Collectors;
 public class TaskService {
     private final Map<Integer, Task> taskMap;
     private final Collection<Task> removedTasks;
-
     public TaskService() {
         this.taskMap = new HashMap<>();
         this.removedTasks = new ArrayList<>();
