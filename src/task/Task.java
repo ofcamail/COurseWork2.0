@@ -47,6 +47,7 @@ public abstract class Task {
             this.title = title;
         } else {
             try {
+
                 throw new IncorrectArgumentException(title);
             } catch (IncorrectArgumentException e) {
                 e.printStackTrace();

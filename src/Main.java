@@ -22,6 +22,7 @@ public class Main {
                 "покорми кота",
                 LocalDateTime.of(2023,1,1,1,5)
         );
+
         OneTimeTask oneTimeTask = new OneTimeTask(
                 "Одноразовое мероприятие",
                 Type.PERSONAL,

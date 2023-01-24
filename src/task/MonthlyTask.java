@@ -8,6 +8,7 @@ public class MonthlyTask extends Task{
         super(title, type, description, dateTime);
     }
 
+
     @Override
     public boolean appearsIn(LocalDate localDate) {
         return localDate.isAfter(LocalDate.now().minusDays(1))

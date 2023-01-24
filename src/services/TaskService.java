@@ -17,6 +17,7 @@ public class TaskService {
         this.removedTasks = new ArrayList<>();
     }
 
+
     public void add(Task task) {
         taskMap.put(task.getId(), task);
     }

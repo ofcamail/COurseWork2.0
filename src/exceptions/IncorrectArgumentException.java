@@ -10,6 +10,7 @@ public class IncorrectArgumentException extends Exception{
         return argument;
     }
 
+
     @Override
     public String toString() {
         return "IncorrectArgumentException{" +
